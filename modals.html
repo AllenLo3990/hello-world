@@ -57,32 +57,14 @@
     	<div class="grid-frame vertical">
         <div class="grid-content shrink collapse">
             <ul class="primary condense menu-bar" style="padding: 0;">
-            <li class="show-for-large-only"><a href="#" zf-toggle="panel"><strong>Toggle Panel</strong></a></li>
-            <li>
-        			<a href="#" onclick="javascript:openDialog();" zf-close="panel" class="fast"><strong>Delete</strong></a>
+        			<a href="#" onclick="javascript:openDialog();"><strong>Delete</strong></a>
         		</li>
             <li>
-              <a href="#" onclick="javascript:openSecondDialog();" zf-close="panel" class="fast"><strong>Share</strong></a>
+              <a href="#" onclick="javascript:openSecondDialog();"><strong>Share</strong></a>
             </li>
           </ul>
         </div>
-        <div class="grid-block vertical show-for-large-only">
-          <div class="grid-block">
-            <div zf-panel="" id="panel">
-              <div class="grid-content">
-                <h3 style="margin:8px;">Project List</h3>
-              </div>
-              <div class="grid-content">
-                  <a class="button" onclick="appendText()" style="margin: 8px">
-                    New Project
-                  </a>
-              </div>
-              <hr>
-              <div class="grid-content" id="test"></div>
-            </div>
-          </div>
-        </div>
-    </div>
+    	</div>
 
     		<div class="avgrund-cover"></div>
 
@@ -93,11 +75,6 @@
 
 
 <script>
-
-function appendText() {
-  var Project = ("<a class='button' style='margin: 8px;'>Project</a><hr>")
-  $("#test").append(Project);
-}
 
 var Avgrund = (function(){
 
